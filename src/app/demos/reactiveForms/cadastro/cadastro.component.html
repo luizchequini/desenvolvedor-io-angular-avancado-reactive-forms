@@ -17,7 +17,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="email">CPF:</label>
                 <div class="col-sm-12">
-                  <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" formControlName="cpf" [ngClass]="{'is-invalid': cadastroForm.get('cpf').errors && (cadastroForm.get('cpf').touched || cadastroForm.get('cpf').dirty)}">
+                  <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" formControlName="cpf" cpf [textMask]="{mask:MASKS.cpf.textMask}" [ngClass]="{'is-invalid': cadastroForm.get('cpf').errors && (cadastroForm.get('cpf').touched || cadastroForm.get('cpf').dirty)}">
                   <span class="text-danger" *ngIf="cadastroForm.get('cpf')?.errors?.required && (cadastroForm.get('cpf').touched || cadastroForm.get('cpf').dirty)"><p>Campo obrigatório!</p></span>
                 </div>
             </div>
@@ -36,14 +36,16 @@
                 <div class="col-sm-12">
                   <input type="password" class="form-control" id="senha" placeholder="Digite sua Senha" formControlName="senha" [ngClass]="{'is-invalid': cadastroForm.get('senha').errors && (cadastroForm.get('senha').touched || cadastroForm.get('senha').dirty)}">
                   <span class="text-danger" *ngIf="cadastroForm.get('senha')?.errors?.required && (cadastroForm.get('senha').touched || cadastroForm.get('senha').dirty)"><p>Campo obrigatório!</p></span>
+                  <span class="text-danger" *ngIf="cadastroForm.get('senha')?.errors?.rangeLength">Senha deve conter entre 6 a 15 caracteres</span>
                 </div>
-            </div>
+            </div> 
 
             <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Confirmar Senha:</label>
+                <label class="control-label col-sm-2" for="email"  >Confirmar Senha:</label>
                 <div class="col-sm-12">
                   <input type="password" class="form-control" id="confirmarsenha" placeholder="Confirmar Senha" formControlName="confirmarsenha" [ngClass]="{'is-invalid': cadastroForm.get('confirmarsenha').errors && (cadastroForm.get('confirmarsenha').touched || cadastroForm.get('confirmarsenha').dirty)}">
                   <span class="text-danger" *ngIf="cadastroForm.get('confirmarsenha')?.errors?.required && (cadastroForm.get('confirmarsenha').touched || cadastroForm.get('confirmarsenha').dirty)"><p>Campo obrigatório!</p></span>
+                  <span class="text-danger" *ngIf="cadastroForm.get('confirmarsenha')?.errors?.equalTo">Confirmação de senha esta diferente da senha acima!</span>
                 </div>
             </div>
 

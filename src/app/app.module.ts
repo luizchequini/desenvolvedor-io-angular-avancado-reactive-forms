@@ -7,6 +7,10 @@ import {registerLocaleData} from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 
+import { NgBrazil } from 'ng-brazil';
+import { TextMaskModule } from 'angular2-text-mask';
+import { CustomFormsModule } from 'ng2-validation';
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
 import { HomeComponent } from './navegacao/home/home.component';
@@ -38,6 +42,9 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    TextMaskModule,
+    NgBrazil,
+    CustomFormsModule,
     [RouterModule.forRoot(rootRouterConfig, {useHash:false})]
   ],
   providers: [
