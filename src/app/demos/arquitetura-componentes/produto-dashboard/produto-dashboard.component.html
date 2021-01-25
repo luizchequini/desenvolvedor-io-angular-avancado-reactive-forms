@@ -4,10 +4,10 @@
     <produto-count [ListaDeprodutos]="ListaDeprodutos"></produto-count>
     <div class="row text-center">
         
-        <produto-card-detalhe class="col-md-4" *ngFor="let produto of ListaDeprodutos" 
-        [produto]="produto"
-        (status)="mudarStatus($event)"
-        ></produto-card-detalhe>
+        <produto-card-detalhe class="col-md-4" *ngFor="let produto of ListaDeprodutos" [produto]="produto" (status)="mudarStatus($event)">
+            <p class="porapenas">Por apenas:</p>
+            <p class="promocao" style="color: red;">Promoção!</p>
+        </produto-card-detalhe>
 
     </div>
 

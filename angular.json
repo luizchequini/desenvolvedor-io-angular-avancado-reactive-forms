@@ -39,6 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["angular2-text-mask", "ng2-validation", "babel-runtime/helpers/extends", "babel-runtime/helpers/slicedToArray", "babel-runtime/helpers/createClass", "babel-runtime/core-js/get-iterator"],
             "outputPath": "dist/desenvolvedor-io-angular-site-e-catalogo",
             "index": "src/index.html",
             "main": "src/main.ts",
