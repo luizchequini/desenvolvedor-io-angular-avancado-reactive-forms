@@ -1,45 +1,11 @@
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
-<p>produto-dashboard works!</p>
+<div class="container main-container">
+
+    <h1>Lista de Produtos</h1>
+    <produto-count [ListaDeprodutos]="ListaDeprodutos"></produto-count>
+    <div class="row text-center">
+        
+        <produto-card-detalhe class="col-md-4" *ngFor="let produto of ListaDeprodutos" [produto]="produto"></produto-card-detalhe>
+
+    </div>
+
+</div>

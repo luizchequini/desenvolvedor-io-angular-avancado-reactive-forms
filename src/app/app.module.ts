@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
-import {registerLocaleData} from '@angular/common';
-import localePt from '@angular/common/locales/pt';
-registerLocaleData(localePt);
+// import {registerLocaleData} from '@angular/common';
+// import localePt from '@angular/common/locales/pt';
+// registerLocaleData(localePt);
 
 import { NgBrazil } from 'ng-brazil';
 import { TextMaskModule } from 'angular2-text-mask';
