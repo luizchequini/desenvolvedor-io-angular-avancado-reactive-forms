@@ -80,7 +80,12 @@ export class ProdutoDashboardComponent implements OnInit {
           valorPromocao: 0,
           imagem: "relogio.jpg"
       }
-    ];
+    ];    
+  }
+
+  mudarStatus(event: Produto){
+    event.promocao = !event.promocao;
+    event.valorPromocao = event.valor - (event.valor * 0,1);
   }
 
 }
