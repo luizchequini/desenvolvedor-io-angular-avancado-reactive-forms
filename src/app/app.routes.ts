@@ -5,6 +5,7 @@ import { CadastroComponent } from "./demos/reactiveForms/cadastro/cadastro.compo
 import { ContatoComponent } from "./institucional/contato/contato.component";
 import { SobreComponent } from "./institucional/sobre/sobre.component";
 import { HomeComponent } from "./navegacao/home/home.component";
+import { NotFoundComponent } from "./navegacao/not-found/not-found.component";
 
 export const rootRouterConfig: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ export const rootRouterConfig: Routes = [
             .then(m=>m.ProdutoModule)
     },
     {path: 'cadastro', component: CadastroComponent},
+    {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
