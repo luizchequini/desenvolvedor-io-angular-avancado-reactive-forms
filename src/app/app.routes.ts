@@ -13,7 +13,7 @@ export const rootRouterConfig: Routes = [
     {path: 'contato', component: ContatoComponent},
     {path: 'sobre', component: SobreComponent},
     {path: 'feature-data-binding', component: DataBindingComponent},
-    {path: 'produtos-dashboard',
+    {path: 'produtos',
             loadChildren:()=> import('./demos/arquitetura-componentes/produto.module')
             .then(m=>m.ProdutoModule)
     },

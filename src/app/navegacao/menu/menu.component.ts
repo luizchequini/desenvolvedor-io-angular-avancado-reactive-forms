@@ -20,9 +20,9 @@ export class MenuComponent {
       admin: false
     },
     {
-      link: '/produtos-dashboard',
+      link: '/produtos',
       name: 'Produto',
-      exact: true,
+      exact: false,
       admin: false
     },
     {
@@ -38,8 +38,8 @@ export class MenuComponent {
       admin: false
     },
     {
-      link: '/feature',
-      name: 'Feature',
+      link: '/feature-data-binding',
+      name: 'Features',
       exact: true,
       admin: false
     }
