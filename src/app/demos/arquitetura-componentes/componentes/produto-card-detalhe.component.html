@@ -7,14 +7,14 @@
         </a>
         <div class="card-body">
             <h4 class="card-title">{{ produto.nome | titlecase }}</h4>
-                <div [ngSwitch]="produto.promocao">
-                    <div *ngSwitchCase="false">
-                        <ng-content select=".porapenas"></ng-content>
-                    </div>
-                    <div *ngSwitchDefault>
-                        <ng-content select=".promocao"></ng-content>
-                    </div>
+            <div [ngSwitch]="produto.promocao">
+                <div *ngSwitchCase="false">
+                    <ng-content select=".porapenas"></ng-content>
                 </div>
+                <div *ngSwitchDefault>
+                    <ng-content select=".promocao"></ng-content>
+                </div>
+            </div>
             <div>
                 <h4 *ngIf="!produto.promocao">{{ produto.valor | currency:'BRL':symbol:'1.2-2':'pt' }}</h4>
 

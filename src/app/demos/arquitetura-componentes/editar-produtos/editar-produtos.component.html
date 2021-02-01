@@ -1,17 +1,33 @@
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
-<p>editar-produtos works!</p>
+<div class="container main-container">
+    <div style="padding-bottom: 30px;">
+        <div class="card h-100">
+            <a class="text-decoration-none" [routerLink] = "['/produto-detalhe', produto.id]">
+                <div style="align-content: center;">
+                    <img src="/assets/{{ produto.imagem }}" height="164px" width="253px" alt="">
+                </div>
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">{{ produto.nome | titlecase }}</h4>
+                <div [ngSwitch]="produto.promocao">
+                    <div *ngSwitchCase="false">Por apenas!</div>
+                    <div *ngSwitchDefault>Em promoção!</div>
+                </div>
+                <div>
+                    <h4 *ngIf="!produto.promocao">{{ produto.valor | currency:'BRL':symbol:'1.2-2':'pt' }}</h4>
+    
+                    <h5 *ngIf="produto.promocao">
+                        De: <small><del>{{ produto.valor | currency:'BRL':symbol:'1.2-2':'pt' }}</del></small>
+                        Para: {{ produto.valorPromocao | currency:'BRL':symbol:'1.2-2':'pt' }}                            
+                    </h5>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary">
+                    <span class="fa fa-shopping-cart"></span> Comprar
+                </a>
+                &nbsp;
+                <a [routerLink]="['/produtos']" class="btn btn-info">Voltar</a>
+            </div>
+        </div>
+    </div>
+</div>
