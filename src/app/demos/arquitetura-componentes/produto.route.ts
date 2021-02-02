@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { EditarProdutosComponent } from "./editar-produtos/editar-produtos.component";
 import { ProdutoDashboardComponent } from "./produto-dashboard/produto-dashboard.component";
 import { ProdutoAppComponent } from "./produto.app.component";
+import { ProdutosResolve } from "./services/produtos.resolve";
 
 const produtoRouterConfig: Routes = [
     // {path: '', component: ProdutoDashboardComponent},
@@ -10,7 +11,14 @@ const produtoRouterConfig: Routes = [
 
     {path: '', component: ProdutoAppComponent, 
     children: [
-        {path: '', component: ProdutoDashboardComponent},
+        {path: '', redirectTo: 'todos'},
+        {
+            path: ':estado', 
+            component: ProdutoDashboardComponent,
+            resolve: {
+                inRouteProdutosResolve: ProdutosResolve
+            }
+        },
         {path: 'editar/:id', component: EditarProdutosComponent}
     ]}
 ];

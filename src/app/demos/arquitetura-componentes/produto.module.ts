@@ -12,6 +12,7 @@ import { ProdutoRoutingModule } from "./produto.route";
 import { EditarProdutosComponent } from './editar-produtos/editar-produtos.component';
 import { ProdutoAppComponent } from "./produto.app.component";
 import { ProdutoService } from "./services/produto.service";
+import { ProdutosResolve } from "./services/produtos.resolve";
 
 @NgModule({
     declarations:[
@@ -29,7 +30,8 @@ import { ProdutoService } from "./services/produto.service";
         
     ],
     providers:[
-        ProdutoService
+        ProdutoService,
+        ProdutosResolve
     ]
 })
 export class ProdutoModule{}
