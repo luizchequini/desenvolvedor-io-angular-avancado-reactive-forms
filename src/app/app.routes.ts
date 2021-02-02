@@ -7,6 +7,7 @@ import { SobreComponent } from "./institucional/sobre/sobre.component";
 import { HomeComponent } from "./navegacao/home/home.component";
 import { NotFoundComponent } from "./navegacao/not-found/not-found.component";
 import { AuthGuard } from "./services/app.guard";
+import { CadastroGuard } from "./services/cadastro.guard";
 
 export const rootRouterConfig: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -24,7 +25,7 @@ export const rootRouterConfig: Routes = [
             canLoad: [AuthGuard],
             canActivate: [AuthGuard]
     },
-    {path: 'cadastro', component: CadastroComponent},
+    {path: 'cadastro', component: CadastroComponent, canDeactivate:[CadastroGuard]},
     {path: '**', component: NotFoundComponent}
 ];
 
