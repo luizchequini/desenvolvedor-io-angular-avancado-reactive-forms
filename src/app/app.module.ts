@@ -19,6 +19,7 @@ import { NavegacaoModule } from './navegacao/navegacao.module';
 import { AppRoutingModule } from './app.routes';
 import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
+import { FilmesComponent } from './pipes/filmes/filmes.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CadastroGuard } from './services/cadastro.guard';
     SobreComponent,
     ContatoComponent,
     DataBindingComponent,
-    CadastroComponent
+    CadastroComponent,
+    FilmesComponent
   ],
   imports: [
     BrowserModule,
