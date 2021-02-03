@@ -1,27 +1,119 @@
-# DesenvolvedorIoAngularSiteECatalogo
+# Cursos de Angular Avançado
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+### Introdução
+-[x] Apresentação
+-[x] Angular Style Guides
 
-## Development server
+### RXJS - Observables
+-[x] Promises e Observables
+-[x] Minha primeira Observable
+-[x] Entendendo os Observers
+-[x] Subscribe e Unsubscribe
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Reactive Forms
+-[x] Apresentação e Setup
+-[x] FormControls e FormGroups
+-[x] FormBuilder API
+-[x] Transformando o formulário em objetos tipados
+-[x] Validação básica de formulários
+-[x] Validações customizadas de formulário
+-[x] Validações avançadas de formulário
+-[x] Gerando formulários dinâmicos
 
-## Code scaffolding
+### Arquitetura de Componentes
+-[x] Angular Modules
+-[x] Módulos compartilhados
+-[x] Módulos de roteamento
+-[x] Lazy loading de módulos
+-[x] @Input decorator
+-[x] @Output decorator
+-[x] Ng-content projection slots
+-[x] @ViewChildren - @ViewChild decorators
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Roteamento Avançado
+-[x] Introdução - Revisão
+-[x] Tratamento de erro 404
+-[x] Estilização de rota ativa
+-[x] Links de navegação dinâmicos
+-[x] Rotas filhas em sub-módulos
+-[x] Obtendo parâmetros da rota
+-[x] Navegação imperativa com Router API
+-[x] Habilitando o Route Tracing
+-[x] Route Resolves e Snapshots
+-[x] Obtendo dados da rota
+-[x] Route Guards - CanLoad, CanActivate
+-[x] Route canDeactivate Guard
 
-## Build
+### Pipes Customizados
+-[x] Aplicando Pipes no Angular
+-[x] Pipes Customizados
+-[ ] Pipe Providers
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### DI e Zonas
+-[ ] Providers - UseClass
+-[ ] Providers UseValue - NgModules - Injection Token
+-[ ] Providers - UseFactory
+-[ ] Providers - UseExisting
+-[ ] NgZones
 
-## Running unit tests
+### Gerenciamento de estado com RxJS
+-[ ] Assistir Aula GratuitaIntrodução ao State Management
+-[ ] Setup da estrutura
+-[ ] Utilizando um serviço
+-[ ] Configuração de State e Store
+-[ ] Gerenciando eventos de mudança de estado
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Testes de Unidade
+-[ ] Introdução
+-[ ] Configurações de testes
+-[ ] Testes em Pipes
+-[ ] Testes em componentes
+-[ ] Testes em serviços
+-[ ] Analisando o code coverage
+-[ ] Testes de integração e2e - Parte 1
+-[ ] Testes de integração e2e - Parte 2
+-[ ] Testes de integração e2e - Parte 3
 
-## Running end-to-end tests
+### Projeto Final
+-[ ] Introdução
+-[ ] Apresentando o Angular 9
+-[ ] Criando o novo projeto
+-[ ] Customizando a navegação
+-[ ] Configurando o pacote de bootstrap
+-[ ] Estrutura do módulo de autenticação
+-[ ] Cadastro de novo usuário
+-[ ] Comunicação com o back-end
+-[ ] Tratando os responses do servidor
+-[ ] Variáveis por tipo de ambiente
+-[ ] Tratando um usuário logado
+-[ ] Notificações com Toastr
+-[ ] Guardas de rotas
+-[ ] Formulário de login
+-[ ] CRUD de Forncedores
+-[ ] Inclusão de fornecedor
+-[ ] Inclusão de fornecedor - pt II
+-[ ] Inclusão de fornecedor - pt III
+-[ ] Utilizando resolvers em consultas
+-[ ] Edição em tela mestre detalhe
+-[ ] Spinner de carregamento de tela
+-[ ] Exibição de mapas
+-[ ] Exclusão de fornecedor
+-[ ] Interceptando erros do servidor
+-[ ] Permissão e restrição de acessos
+-[ ] Finalizando o CRUD de fornecedor
+-[ ] Cadastro de produtos
+-[ ] Upload de imagens
+-[ ] Dominando o image cropper
+-[ ] Configurando o caminho das imagens
+-[ ] Forma alternativa de upload de arquivos
+-[ ] Exibindo os produtos de um fornecedor
+-[ ] Implementando a ReturnUrl após login
+-[ ] Refatorando serviços de guarda
+-[ ] Refatorando componentes
+-[ ] Teste automatizado de cadastro de produto
+-[ ] Deploy no IIS
+-[ ] Deploy no Docker - pt I
+-[ ] Deploy no Docker - pt II
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Conclusão
+-[ ] Palavras finais

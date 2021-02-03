@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app.routes';
 import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
 import { FilmesComponent } from './pipes/filmes/filmes.component';
+import { FileSizePipe } from './pipes/filmes/filesize.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FilmesComponent } from './pipes/filmes/filmes.component';
     ContatoComponent,
     DataBindingComponent,
     CadastroComponent,
-    FilmesComponent
+    FilmesComponent,
+    FileSizePipe
   ],
   imports: [
     BrowserModule,
