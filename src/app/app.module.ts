@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
+import {registerLocaleData} from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
+
 import { NgBrazil } from 'ng-brazil';
 import { TextMaskModule } from 'angular2-text-mask';
 import { CustomFormsModule } from 'ng2-validation';
@@ -21,6 +25,7 @@ import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
 import { FilmesComponent } from './pipes/filmes/filmes.component';
 import { FileSizePipe } from './pipes/filmes/filesize.pipe';
+import { ImageFormaterPipe } from './pipes/filmes/image.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { FileSizePipe } from './pipes/filmes/filesize.pipe';
     DataBindingComponent,
     CadastroComponent,
     FilmesComponent,
-    FileSizePipe
+    FileSizePipe,
+    ImageFormaterPipe
   ],
   imports: [
     BrowserModule,
